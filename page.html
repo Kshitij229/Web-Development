@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background: url('j.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav{
+            display: flex;
+            /* background-color: rgb(209, 190, 190); */
+        }
+        .logo{
+            align-items: center;
+            display: flex;
+        }
+        .logo img{
+            width: 90px;
+            padding: 15px 40px;
+            border-radius: 100px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+        }
+        nav ul li {
+            list-style: none;
+            padding: 0 23px;
+
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(255, 0, 0);
+        }
+         nav ul li a:hover{
+            color: cyan;
+            cursor: pointer;
+            font-weight: bolder;
+         }
+         .search{
+            display: flex;
+
+            padding: 0px 98px;
+            margin: 0px 540px;
+            justify-content: flex-end;
+            text-align: right;
+         }
+         .btn{
+             font-family: Arial, Helvetica, sans-serif;
+             margin: 40px 26px;
+             padding: 0 20px;
+             cursor: pointer;
+             color: rgb(202, 42, 42);
+             font-size: 20px;
+             border: 2px solid beige;
+             text-align:right ;
+             justify-content: right;
+         }
+         .btn:hover{
+            background-color: cadetblue;
+         }
+         .main{
+            border: 2px solid white;
+            border: 2px solid white;
+            margin: 100px 80px;
+            padding: 60px;
+            width: 40%;
+            border-radius: 28px;
+            overflow: hidden;
+         }
+         .form-group input{
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+            overflow: hidden;
+         }
+         .main h1{
+            color: aliceblue;
+            text-align: center;
+         }
+         .text-center{
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+         }
+         .main .btn{
+            display: block;
+            width: 100px;
+            margin: 25px auto;
+
+         }
+
+         
+         footer{
+            color: aqua;
+            height: 10vh;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="" width="90px" height="85px" >
+            </div>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">JOIN US</a></li>
+            </ul>
+        
+            <div class="search">
+                <button class="btn">CALL US</button>
+                <button class="btn">Email Id</button>
+            </div>    
+                
+
+        </nav>
+    </header>
+    <div class="main">
+        <h1>Welcome to Piyush Fitness</h1>
+        <form action="noaction.php"> 
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Name"/>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email Address"/>
+            </div>
+            <div class="form-group">
+               <input type="text" name="" placeholder="Gender">
+               </div>
+           <div class="form-group">
+            <input type="text" name="" placeholder="Locality">
+           </div>
+           <div class="form-group">
+             <input type="text" name="" placeholder="Phone Number">
+          </div>
+          <button class="btn">Submit</button>
+        </form>
+    </div>
+    <footer class="text-center">
+        <p>Copyright &copy; MyCart.com</p>
+    </footer>
+</body>
+</html>
